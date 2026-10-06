@@ -1,4 +1,4 @@
-package com.example.JobApp.model;
+package com.example.jobbackend.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

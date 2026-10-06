@@ -1,7 +1,7 @@
-package com.example.JobApp.service;
+package com.example.jobbackend.service;
 
-import com.example.JobApp.model.JobPost;
-import com.example.JobApp.repo.JobRepo;
+import com.example.jobbackend.model.JobPost;
+import com.example.jobbackend.repo.JobRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

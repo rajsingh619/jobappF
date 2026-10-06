@@ -1,6 +1,6 @@
-package com.example.JobApp.repo;
+package com.example.jobbackend.repo;
 
-import com.example.JobApp.model.JobPost;
+import com.example.jobbackend.model.JobPost;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -27,6 +27,8 @@ public class JobRepo {
                     List.of("Networking", "Cisco", "Routing", "Switching")),
 
 
+            new JobPost(5, "Mobile App Developer", "Experience in mobile app development for iOS and Android", 3,
+                    List.of("iOS Development", "Android Development", "Mobile App")),
             new JobPost(5, "Mobile App Developer", "Experience in mobile app development for iOS and Android", 3,
                     List.of("iOS Development", "Android Development", "Mobile App"))
     ));
