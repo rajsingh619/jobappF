@@ -28,8 +28,6 @@ public class JobRepo {
 
 
             new JobPost(5, "Mobile App Developer", "Experience in mobile app development for iOS and Android", 3,
-                    List.of("iOS Development", "Android Development", "Mobile App")),
-            new JobPost(5, "Mobile App Developer", "Experience in mobile app development for iOS and Android", 3,
                     List.of("iOS Development", "Android Development", "Mobile App"))
     ));
 
@@ -40,5 +38,14 @@ public class JobRepo {
     public void addJob(JobPost job){
         jobs.add(job);
         System.out.println(jobs);
+    }
+
+    public JobPost getJob(int postId) {
+        for(JobPost job : jobs){
+            if(job.getPostId() == postId){
+                return job;
+            }
+        }
+        return null;
     }
 }

@@ -18,4 +18,12 @@ public class JobController {
    public List<JobPost> getJobPosts() {
       return jobService.viewJobs();
    }
+
+   @PostMapping("jobPost")
+    public JobPost addJobPost(@RequestBody JobPost jobPost) {
+        jobService.addJob(jobPost);
+        JobPost newJob = jobService.getJob(jobPost.getPostId());
+        return newJob;
+   }
+
 }
