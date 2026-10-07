@@ -10,5 +10,4 @@ public class JobbackendApplication {
         System.out.println("Hello World!");
         SpringApplication.run(JobbackendApplication.class, args);
 	}
-
 }
